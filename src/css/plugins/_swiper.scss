@@ -1,0 +1,36 @@
+.swiper-container {
+    max-width: 1170px;
+    margin-bottom: 100px;
+}
+
+.swiper-slide{
+    
+    & > div{
+        margin: 0 15px;
+        display:flex;
+        align-items: center;
+        background:#222;
+        padding: 60px 20px 50px 40px;
+        @media screen and (max-width: 375px){
+            flex-direction: column;
+            margin: 0 0;
+        }
+    }
+    img{
+        border-radius: 50%;
+        margin-right: 35px;
+    }
+    @media screen and (max-width: 375px){
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+}
+
+.swiper-pagination{
+    position: static;
+    padding-top: 22px;
+}
+
+.swiper-pagination-bullet, .pagination-bullet-active{
+    background: $pink;
+}

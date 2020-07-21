@@ -1,0 +1,104 @@
+.infos{
+    background: #222;
+    & > div{
+        display: flex;
+        @media screen and (max-width: 375px){
+            flex-direction: column;
+        }
+        padding-bottom: 100px;
+        h2{
+            margin-bottom: 45px;
+            font-size: 24px;
+        }
+        .location{
+            flex-basis: 35%;
+            & > div{
+                display: flex;
+                align-items: center;
+                margin-bottom: 15px;
+                p{
+                    margin: 0;
+                    &:last-child{
+                        color: #fff;
+                    }
+                }
+                span{
+                    font-size: 30px;
+                    color: $pink;
+                    width: 74px;
+                    height: 74px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background: #393939;
+                    border-radius: 50%;
+                    margin-right: 26px;
+                }
+                @media screen and (max-width: 375px){
+                    flex-direction: column;
+                    text-align: center;
+                    margin-bottom: 30px;
+                    span{
+                        margin-right: 0;
+                        width: 60px;
+                        height: 60px;
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+        .comment{
+            flex-basis: 65%;
+            div{
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 30px;
+                div{
+                    width: 50%;
+                    margin: 0;
+                    &:first-child{
+                        margin-right: 30px;
+                    }
+                }
+                input[type=text]{
+                    width: 100%;
+                    flex-basis: calc(50%+15px);
+                }
+                @media screen and (max-width: 375px){
+                    flex-direction: column;
+                    div{
+                        width: 100%;
+                    }
+                    input:first-child{
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+            textarea{
+                width: 100%;
+                resize: none;
+                margin-bottom: 45px;
+            }
+            div input, textarea{
+                background:#393939;
+                color:#b3b3b3;
+                border: none;
+                padding: 20px;
+                font-family: 'Libre Franklin', sans-serif;
+                font-size: 16px;
+                border-radius: 2px;
+                transition: .3s background ease-in-out;
+                &:focus, &:hover{
+                    background: #fff;
+                    color: #0d0a27;
+                    border: none;
+                    border-radius: 2px;
+                    outline: none;
+                }
+            }
+            input[type=submit]{
+                border: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+@import "base/normalize";
+@import "base/typo";
+@import "base/colours";
+
+@import "helpers/variables";
+@import "helpers/mixins";
+
+@import "layout/general";
+@import "layout/header";
+@import "layout/footer";
+
+@import "sections/hero";
+@import "sections/about-story";
+@import "sections/services";
+@import "sections/portfolio";
+@import "sections/number-speaks";
+@import "sections/work-with-us";
+@import "sections/team";
+@import "sections/latest-blog";
+@import "sections/header-pages";
+@import "sections/contact";
+
+
+@import "pages/homepage";
+
+@import "plugins/swiper";

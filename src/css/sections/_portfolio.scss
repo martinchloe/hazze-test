@@ -1,0 +1,28 @@
+.portfolio{
+    text-align: center;
+    background: #222;
+    img{
+        width: 100%;
+    }
+    h2{
+        margin-bottom: 100px;
+    }
+    & > div {
+        display:flex;
+        @media screen and (max-width: 375px){
+            flex-direction: column;
+        }
+        & > div div{
+            display:flex;
+            @media screen and (max-width: 375px){
+                flex-direction: column;
+            }
+            img{
+                width:50%;
+                @media screen and (max-width: 375px){
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
